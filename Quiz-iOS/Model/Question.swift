@@ -7,12 +7,17 @@
 
 import Foundation
 
-struct Question {
+struct Question: Equatable {
     let text: String
     let answer: String
     
     init(q: String, a: String) {
         text = q
         answer = a
+    }
+    
+    static func == (lhs: Question, rhs: Question) -> Bool {
+        return lhs.text == rhs.text &&
+        lhs.answer == rhs.answer
     }
 }
