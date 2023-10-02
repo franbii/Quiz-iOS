@@ -21,11 +21,17 @@
                                     <constraint firstAttribute="height" constant="102" id="L1y-HZ-enL"/>
                                 </constraints>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4Hc-2O-YlA">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="4Hc-2O-YlA">
                                 <rect key="frame" x="16" y="59" width="361" height="759"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgU-TF-dcX">
+                                        <rect key="frame" x="0.0" y="0.0" width="361" height="71.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="43f-nT-cPL">
-                                        <rect key="frame" x="0.0" y="0.0" width="361" height="574"/>
+                                        <rect key="frame" x="0.0" y="76.333333333333343" width="361" height="497.66666666666663"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -85,6 +91,7 @@
                         <outlet property="falseButton" destination="mNr-25-b9h" id="eac-7u-AnL"/>
                         <outlet property="progressBar" destination="hDq-Pn-HbA" id="oJL-jf-PHV"/>
                         <outlet property="questionLabel" destination="43f-nT-cPL" id="Zw4-kt-Rgs"/>
+                        <outlet property="scoreLabel" destination="pgU-TF-dcX" id="tiY-ft-oGM"/>
                         <outlet property="trueButton" destination="5T0-LT-BwC" id="2yo-la-eWc"/>
                     </connections>
                 </viewController>
